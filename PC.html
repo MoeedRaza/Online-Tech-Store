@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAura/BuildYourPC/</title>
+    <link rel="stylesheet" href="PC.css">
+
+</head>
+<body>
+    <header>
+        <a href="Home.html"><img src="Logo.png" alt=""></a>
+        <h1><b>Build Your PC</b></h1>
+        <a href="Cart.html" class="cart">🛒</a>
+    </header>
+
+    <!-- Item #1: -->
+    <div id="Item1" class="section">
+        <div id="section-content">
+            <h3><b>AMD Ryzen 7 7800X3D</b></h3>
+            <h4><b>PKR 119,999</b></h4>
+            <p>8-core, 16-thread processor with 3D V-Cache for high-speed gaming and productivity</p>
+            <button type="button" onclick="addToCart('AMD Ryzen 7 7800X3D', 119999)">Add To Cart</button>
+        </div>
+        <img src="PC\PC_1.jpg" alt="Processor">
+    </div>
+
+    <!-- Item #2: -->
+    <div id="Item2" class="section">
+        <img src="PC\PC_2.jpg" alt="Graphic Card">
+        <div id="section-content">
+            <h3><b>NVIDIA RTX 4070 Ti</b></h3>
+            <h4><b>PKR 249,999</b></h4>
+            <p>12GB GDDR6X VRAM, DLSS 3 support, and ray tracing for immersive gaming</p>
+            <button type="button" onclick="addToCart('NVIDIA RTX 4070 Ti', 249999)">Add To Cart</button>
+        </div>
+    </div>
+
+    <!-- Item #3: -->
+    <div id="Item3" class="section">
+        <div id="section-content">
+            <h3><b>ASUS ROG Strix B650-A Gaming Wi-Fi</b></h3>
+            <h4><b>PKR 69,000</b></h4>
+            <p>AM5 socket, PCIe 5.0 support, and WiFi 6E for high-speed connectivity</p>
+            <button type="button" onclick="addToCart('ASUS ROG Strix B650-A Gaming Wi-Fi', 69000)">Add To Cart</button>
+        </div>
+        <img src="PC\PC_3.jpg" alt="Motherboard">
+    </div>
+
+    <!-- Item #4: -->
+    <div id="Item4" class="section">
+        <img src="PC\PC_4.jpg" alt="RAM">
+        <div id="section-content">
+            <h3><b>Corsair Vengeance RGB 32GB (2x16GB) DDR5 6000MHz</b></h3>
+            <h4><b>PKR 34,999</b></h4>
+            <p>High-speed DDR5 memory with RGB lighting and low latency</p>
+            <button type="button" onclick="addToCart('Corsair Vengeance RGB 32GB (2x16GB) DDR5 6000MHz', 34999)">Add To Cart</button>
+        </div>
+    </div>
+
+    <!-- Item #5: -->
+    <div id="Item5" class="section">
+        <div id="section-content">
+            <h3><b>Samsung 990 Pro 2TB NVMe SSD</b></h3>
+            <h4><b>PKR 60,000</b></h4>
+            <p>PCIe 4.0 SSD with 7450MB/s read speed for ultra-fast performance</p>
+            <button type="button" onclick="addToCart('Samsung 990 Pro 2TB NVme SSD', 60000)">Add To Cart</button>
+        </div>
+        <img src="PC\PC_5.jpg" alt="Storage">
+    </div>
+
+    <!-- Item #6: -->
+    <div id="Item6" class="section">
+        <img src="PC\PC_6.jpg" alt="Power Supply">
+        <div id="section-content">
+            <h3><b>CorsairRM850x 80+ Gold 850W</b></h3>
+            <h4><b>PKR 35,000</b></h4>
+            <p>Fully modular PSU with silent operation and high efficiency</p>
+            <button type="button" onclick="addToCart('CorsairRM850x 80+ Gold 850W', 35000)">Add To Cart</button>
+        </div>
+    </div>
+
+    <!-- Item #7: -->
+    <div id="Item7" class="section">
+        <div id="section-content">
+            <h3><b>Lian Li 011 Dynamic EVO</b></h3>
+            <h4><b>PKR 25,000</b></h4>
+            <p>Premium mid-tower case with tempered glass panels and excellent airflow</p>
+            <button type="button" onclick="addToCart('Lian Li 011 Dynamic EVO', 25000)">Add To Cart</button>
+        </div>
+        <img src="PC\PC_7.jpg" alt="PC Case">
+    </div>
+
+    <!-- Item #8: -->
+    <div id="Item8" class="section">
+        <img src="PC\PC_8.jpg" alt="Cooling System">
+        <div id="section-content">
+            <h3><b>NZXT Kraken X73 RGB Liquid Cooler</b></h3>
+            <h4><b>PKR 50,000</b></h4>
+            <p>360mm AIO liquid cooler with RGB lighting and high-performance cooling</p>
+            <button type="button" onclick="addToCart('NZXT Kraken X73 RGB Liquid Cooler', 50000)">Add To Cart</button>
+        </div>
+    </div>
+
+    <!-- Item #9: -->
+    <div id="Item9" class="section">
+        <div id="section-content">
+            <h3><b>Transcend 8GB DDR5</b></h3>
+            <h4><b>PKR 8,000</b></h4>
+            <p>High-speed DDR5 memory and low latency</p>
+            <button type="button" onclick="addToCart('Transcend 8GB DDR5', 8000)">Add To Cart</button>
+        </div>
+        <img src="PC\PC_9.jpg" alt="RAM">
+    </div>
+
+    <!-- Item #10: -->
+    <div id="Item10" class="section">
+        <img src="PC\PC_10.jpg" alt="Mouse">
+        <div id="section-content">
+            <h3><b>Logitech MX Master 3S Wireless Mouse</b></h3>
+            <h4><b>PKR 27,000</b></h4>
+            <ul>
+                <li><b>8,000 DPI Optical Sensor:</b>Tracks on virtually any surface, including glass</li>
+                <li><b>Quiet Clicks:</b>90% less click noise for a distraction-free experience</li>
+                <li><b>Electromagnetic Scrolling:</b>Scroll 1,000 lines per second with precision</li>
+                <li><b>Rechargable Battery:</b>Up to 70 days of use on a full charge</li>
+            </ul>
+            <button type="button" onclick="addToCart('Logitech MX Master 3S Wireless Mouse', 27000)">Add To Cart</button>
+        </div>
+    </div>
+
+    <footer>
+    <div class="msg">
+      <form action="" class="contact">
+        <h2>Contact Us</h2>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <label for="message">Message</label>
+        <input type="text" id="message" class="message" placeholder="Type your message..." required />
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+    <p>&copy;2020 TechAura. All Rights Reserved.</p>
+  </footer>
+
+    <script src="PC.js"></script>
+
+</body>
+</html>

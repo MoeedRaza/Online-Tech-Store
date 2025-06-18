@@ -1,0 +1,210 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #1e293b;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: linear-gradient(to right, #334155, #1e293b);
+        color: #e2e8f0;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .payment-container {
+        max-width: 600px;
+        margin: 3em auto;
+        padding: 2em;
+        background-color: #273549;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .payment-container h2 {
+        text-align: center;
+        margin-bottom: 1em;
+        color: #fcd34d;
+    }
+
+    label {
+        display: block;
+        margin: 0.5em 0;
+        font-weight: bold;
+        color: #06b6d4;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 0.8em;
+        margin: 0.5em 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: #334155;
+        color: #e2e8f0;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+        outline: 2px solid #38bdf8;
+        background-color: #1e293b;
+    }
+
+    .payment-btn {
+        background-color: #06b6d4;
+        color: #fff;
+        padding: 0.8em 1.5em;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 1em;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .payment-btn:hover {
+        background-color: #0891b2;
+    }
+
+    .total-price {
+        font-size: 1.2em;
+        margin-top: 1em;
+        text-align: center;
+        color: #fcd34d;
+    }
+
+    footer {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        color: #7dd3fc;
+    }
+
+    footer h2 {
+        text-align: center;
+        margin-bottom: 1px;
+        color: #7dd3fc;
+        font-size: 1.5rem;
+    }
+
+    footer .msg {
+        text-align: left;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 9px;
+        width: 50%;
+        height: 400px;
+        margin-top: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    footer form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer form input,
+    footer form textarea {
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        font-size: 1rem;
+        background-color: #334155;
+        color: #e2e8f0;
+        resize: vertical;
+    }
+
+    footer form input:focus,
+    footer form textarea:focus {
+        outline: 2px solid #38bdf8;
+        background-color: #1e293b;
+    }
+
+    .message {
+        height: 50px;
+    }
+
+    footer form button {
+        background-color: #06b6d4;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.1rem;
+        padding: 11px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    footer form button:hover {
+        background-color: #0891b2;
+        box-shadow: 1px 5px 8px black;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .payment-container {
+            padding: 1.5em;
+        }
+
+        .total-price {
+            font-size: 1em;
+        }
+
+        footer .msg {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .payment-container {
+            margin: 2em auto;
+            padding: 1em;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="tel"] {
+            padding: 0.6em;
+            font-size: 14px;
+        }
+
+        .payment-btn {
+            font-size: 14px;
+            padding: 0.7em 1em;
+        }
+
+        footer {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        footer .msg {
+            height: auto;
+            width: 90%;
+        }
+    }
